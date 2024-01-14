@@ -1,125 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="author" content="Junior Nzinga">
+        <meta name="description" content="The website of La Louange church (HQ)">
+        <meta name="keyword" content="la louange, La Louange, eglise la louange">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+
+        <!-- Import fonts from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Import of logos -->
+        <script src="https://kit.fontawesome.com/a3cdd8b07f.js" crossorigin="anonymous"></script>
+
         <title>Eglise La Louange</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <div id="logo">
-                    <img src="images/logo.jpg" alt="Logo Eglise La Louange">
-                </div>
-                <div class="menu">
-                    <a href="#">Accueil</a>
-                    <a href="#">RTL</a>
-                    <a href="#">Radio FM</a>
+        <div class="header">
+            <div class="row">
+                <img src="images/logo.jpg" alt="Logo Eglise La Louange" id="logo" width="100" height="100" style="display: block;">
+                <div class="nav-links">
+                    <a href="#" class="active">Accueil</a>
+                    <div class="dropdown">
+                        <a href="#">Media</a>
+                        <div class="dropdown-content">
+                            <a href="#">RTL</a>
+                            <a href="#">Radio FM</a>
+                        </div>
+                    </div>
                     <a href="#">Centre Medical</a>
                     <a href="#">Construction</a>
                     <a href="#">Communiqu&eacute;s</a>
                     <a href="#">Qui sommes-nous?</a>
                 </div>
-                <button class="btn donate">Faire un don</button>
-            </nav>
-        </header>
-        <body>
-            <div class="hero">
+                <!-- <button type="button" class="btn">Dons et offrandes</button> -->
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Eglise La Louange</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut accusamus mollitia, quaerat nam accusantium laborum maiores recusandae incidunt quam, illo fugiat adipisci suscipit minima, harum ratione quidem provident nisi.
+                </p>
+                <button class="btn">En savoir plus</button>
+            </div>
+        </div>
+        <section id="worship">
+            <div class="row">
+                <h2>Programmes de cultes</h2>
                 <div class="wrap">
-                    <h1 id="title">Eglise La Louange</h1>
-                    <div class="text"></div>
-                    <button class="btn about-btn">En savoir plus</button>
+                    <div>
+                        <h3>Mardi et Vendredi</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-play"></i> Culte de la semaine</li>
+                        </ul>
+                        <span>De 19h-20h</span>
+                    </div>
+                    <div>
+                        <h3>Dimanche</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-play"></i> Culte Dominical</li>
+                        </ul>
+                        <span>De 9h-12h</span>
+                        <small style="display: block;">Sainte c&egrave;ne: chaque 1er dimanche du mois.</small>
+                    </div>
                 </div>
             </div>
-            <section>
-                <h2>Programmes de cultes</h2>
-            </section>
-            <section>
-                <div class="wrap">
-                    <img src="images/centre-medical.jpg" alt="Centre Medical La Louange">
+        </section>
+        <section id="medical-center">
+            <img src="images/centre-medical2.jpg" alt="Centre Medical La Louange" width="800" height="450">
+            <div class="wrap">
+                <div class="text">
                     <h2>Centre Medical La Louange</h2>
-                    <button class="btn">Decouvrir</button>
+                    <p class="desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt hic consequuntur autem perspiciatis sed? 
+                        Optio eos, veritatis doloribus aliquam obcaecati vitae pariatur, 
+                        magni qui laborum autem eveniet possimus cupiditate quam!
+                    </p>
+                    <button class="btn">D&eacute;couvrir</button>
                 </div>
-            </section>
-            <section>
-                <h2>Faire un don</h2>
+            </div>
+        </section>
+        <!-- <section id="donate">
+            <div class="row">
+                <h2>Dons et Offrandes</h2>
                 <div class="text-wrap">
-                    <p>Nous venons en aide aux personnnes vulnerables; orphelins, vieillards</p>
-                    <div>
-                        <q>Aime ton prochain comme toi-meme.</q>
-                        <span>Verset</span>
-                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, fugiat?</p>
                 </div>
-                <button class="btn donate">Faire un don</button>
-            </section>
-            <section>
+                <button class="btn donate">Cliquez-ici</button>
+            </div>
+        </section> -->
+        <section id="broadcast">
+            <div class="row">
                 <h2>Diffusion</h2>
-                <p>Nos cultes sont &agrave; suivre sur:</p>
-                <ul>
-                    <li>TNT: Canal 56</li>
-                    <li>Radio: 98.8Mhz</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Questions fr&eacute;quentes</h2>
-                <p>Nous repondons &agrave; quelques questions:</p>
-                <ul>
-                    <li>Comment connaitre Dieu?</li>
-                    <li>Comment r&eacute;ssur son Mariage?</li>
-                    <li>Que faire pour devenir membre de l'Eglise?</li>
-                </ul>
-                <p>Pour d'autres questions, ecrivez-nous directement en cliquant <a href="#">ici</a>.</p>
-            </section>
-            <section>
-                <h2>Message du Pasteur</h2>
                 <div class="wrap">
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dicta harum facere eius accusantium ipsam perferendis sapiente obcaecati distinctio fuga soluta delectus in, quasi, 
-                        ullam autem odio nisi dolore asperiores nulla.
-                    </blockquote>
-                    <span class="pastor-name">Pasteur Incognito</span>
-                </div>
-            </section>
-            <footer>
-                <div class="nav-links">
-                    <div class="wrap">
-                        <h3>&Agrave propos de nous</h3>
-                        <ul>
-                            <li><a href="#">Lien 1</a></li>
-                            <li><a href="#">Lien 1</a></li>
-                            <li><a href="#">Lien 1</a></li>
-                            <li><a href="#">Lien 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="wrap">
-                        <h3>Nos contacts</h3>
-                        <div class="wrap">
-                            <ul>
-                                <li><a href="#">Lien 1</a></li>
-                                <li><a href="#">Lien 1</a></li>
-                                <li><a href="#">Lien 1</a></li>
-                                <li><a href="#">Lien 1</a></li>
-                            </ul>
-                            <ul class="social">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">YouTube</a></li>
-                            </ul>
+                    <p>Nous diffusons nos cultes et nos pr&eacute;dications sur:</p>
+                    <div class="wrap-content">
+                        <div>
+                            <h4><i class="fa-solid fa-tv"></i></h4>
+                            <p>TNT: Canal 56</p>
+                        </div>
+                        <div>
+                            <h4><i class="fa-solid fa-radio"></i></h4>
+                            <p>Radio: 99.7Mhz</p>
                         </div>
                     </div>
                 </div>
-                <div class="church-location">
-                    <div class="title">
-                        <address>65, 66, 67, 68, 70, 72, Avenue Kanda Kanda, Quartier Salongo, Commune de Kasa-vubu, Kinshasa - RDC</address>
+            </div>
+        </section>
+        <section id="faq">
+            <div class="row">
+                <h2>Questions fr&eacute;quentes</h2>
+                <div class="wrap">
+                    <p>Nous repondons &agrave; quelques questions:</p>
+                    <div class="question-wrap">
+                        <span class="question-title">Comment connaitre Dieu?</span>
+                        <div class="question-txt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, 
+                            mollitia eligendi modi impedit amet soluta consequuntur quo unde facere assumenda?
+                        </div>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.4026948297055!2d15.303108177664782!3d-4.335253835290392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3194bb8d3e93%3A0x914c98c5e4f040ce!2sEglise%20La%20Louange%20(Eglise%20Centrale)!5e0!3m2!1sfr!2scd!4v1703581517509!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="question-wrap">
+                        <span class="question-title">Comment r&eacute;ussir son Mariage?</span>
+                        <div class="question-txt">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, fugit ex. 
+                            Iure debitis ex eum sit officia suscipit non aliquam.
+                        </div>
+                    </div>
+                    <div class="question-wrap">
+                        <span class="question-title">Que faire pour devenir membre de l'Eglise?</span>
+                        <div class="question-txt">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, aspernatur illum. 
+                            Molestias cumque voluptas cupiditate! Consectetur minus dolorum amet non!
+                        </div>
+                    </div>
+                    <p>Pour d'autres questions, ecrivez-nous directement en cliquant <a href="mailto:questions@egliselalouange.com">ici</a>.</p>
                 </div>
-                <div class="copyright-wrap">
+            </div>
+        </section>
+        <section id="pastor-text">
+            <div class="row">
+                <div class="text">
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dicta harum facere eius accusantium ipsam perferendis sapiente obcaecati distinctio fuga soluta delectus in, quasi, 
+                        ullam autem odio nisi dolore asperiores nulla.
+                    </div>
+                    <span class="author">Name</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="wrap">
+                    <div class="wrap-content">
+                        <img src="images/logo.jpg" class="footer-logo" alt="Logo Eglise" width="50" height="50">
+                        <span class="title">Eglise La Louange</span>
+                    </div>
+                    <div class="wrap-content">
+                        <div>
+                            <div class="contacts">
+                                <a href="#">info@egliselalouange.com</a>
+                                <div>
+                                    <span>Phone 1</span>, <span>Phone 2</span>
+                                </div>
+                            </div>
+                            <div class="social-media">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <address>65, 66, 67, 68, 70, 72, Avenue Kanda Kanda, Quartier Salongo, Commune de Kasa-vubu, Kinshasa - RDC</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <!-- <div class="contacts">
+                        <h3>Nos contacts</h3>
+                        <ul>
+                            <li><a href="#">info@egliselalouange.com</a></li>
+                            <li><a href="#">Phone 1</a></li>
+                            <li><a href="#">Phone 2</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="about-us">
+                        <h3>&Agrave; propos</h3>
+                        <ul>
+                            <li><a href="#">Qui sommes-nous?</a></li>
+                            <li><a href="#">Notre vision</a></li>
+                            <li><a href="#">Nos extensions</a></li>
+                            <li><a href="#">Nos enseignements</a></li>
+                            <li><a href="#">RTL</a></li>
+                            <li><a href="#">Radio FM</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Enregistrez-vous, et restez toujours inform&eacute;s sur nos actualit&eacute;s.</p>
+                        <form autocomplete="off">
+                            <input type="text" name="news_email" id="news_email" placeholder="Votre email...">
+                            <input type="submit" name="news_btn" id="news_btn" class="btn" value="Enregistrer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="church-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.4026948297055!2d15.303108177664782!3d-4.335253835290392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3194bb8d3e93%3A0x914c98c5e4f040ce!2sEglise%20La%20Louange%20(Eglise%20Centrale)!5e0!3m2!1sfr!2scd!4v1703581517509!5m2!1sfr!2scd" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="copyright">
                     <span>&copy; Eglise La Louange - 2023. Tous droits r&eacute;serv&eacute;s.</span>
                 </div>
-            </footer>
-        </body>
+            </div>
+        </footer>
     </body>
 </html>
